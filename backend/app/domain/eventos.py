@@ -8,7 +8,7 @@ from app.domain.enums import NivelEscalamiento, TipoAlarma
 class IncidenciaAbierta:
     punto_id: str
     ocurrido_en: datetime
-    tipo_alerta: TipoAlarma.PUNTO_SIN_REVISAR
+    tipo_alerta: TipoAlarma = TipoAlarma.PUNTO_SIN_REVISAR
 
 @dataclass(slots=True)
 class IncidenciaEscalada:

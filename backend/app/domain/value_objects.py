@@ -38,5 +38,5 @@ class PlanEscalamiento:
     minuto_a_gerencia: int
 
     def __post_init__(self) -> None:
-        if self.minuto_A_supervisor >= self.minuto_a_gerencia:
+        if self.minuto_a_supervisor >= self.minuto_a_gerencia:
             raise ValueError("El minuto_a_supervisor debe ser menor que el minuto_a_gerencia.")

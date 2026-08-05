@@ -22,7 +22,7 @@ class PuntoControl:
     umbral: Umbral
     #El field(defualt_factory=VentanaOperativa) permite que cada instancia de PuntoControl tenga su propia instancia de VentanaOperativa,
     #evitando que todas las instancias compartan la misma referencia a un objeto mutable.
-    ventana_operativa: VentanaOperativa = field(defualt_factory=VentanaOperativa)
+    ventana_operativa: VentanaOperativa = field(default_factory=VentanaOperativa)
     en_mantenimiento: bool = False
     activo: bool = True
 
@@ -32,7 +32,7 @@ class Paso:
     punto_id: str
     guardia_id: str
     ocurrido_en: datetime
-    evento_Id_externo: str
+    evento_id_externo: str
     fue_retransmitido: bool = False
 
 @dataclass(slots=True)
