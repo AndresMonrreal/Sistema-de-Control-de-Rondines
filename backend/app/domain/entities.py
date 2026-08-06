@@ -30,7 +30,7 @@ class PuntoControl:
 class Paso:
     id: str
     punto_id: str
-    guardia_id: str
+    guardia_id: str | None
     ocurrido_en: datetime
     evento_id_externo: str
     fue_retransmitido: bool = False
